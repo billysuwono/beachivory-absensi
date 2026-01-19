@@ -1,4 +1,5 @@
 {
+  "homepage": "https://billysuwono.github.io/beachivory-absensi",
   "name": "beach-ivory-attendance",
   "private": true,
   "version": "0.0.0",
@@ -6,13 +7,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@google/genai": "^1.37.0",
+    "@tailwindcss/vite": "^4.1.18",
     "lucide-react": "^0.562.0",
     "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react-dom": "^19.2.3",
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
